@@ -1,20 +1,122 @@
-Politique de confidentialité - Application iOS/iPadOS/macOS "Transports IDF"
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité - Transports IDF</title>
+  <style>
+    :root {
+      --primary-color: #007AFF;
+      --bg-color: #F2F2F7;
+      --card-bg: #FFFFFF;
+      --text-color: #1C1C1E;
+      --subtext-color: #6C6C70;
+    }
 
-L'application iOS "Transports IDF" est gérée par le développeur indépendant Donovan Herbé.
-Cette application est disponible dans l'App Store pour les iPhone et iPad sous iOS 17 et supérieur, et dans le Mac App Store pour les Mac sous macOS 14 et 
-supérieur.
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #000000;
+        --card-bg: #1C1C1E;
+        --text-color: #FFFFFF;
+        --subtext-color: #8E8E93;
+      }
+    }
 
-Cette application utilise votre position pour pouvoir afficher les arrêts à proximité de vous (option "Autoriser lors de l'utilisation de l'app" avec précision 
-exacte requis), et utilise votre position pour le suivi d'itinéraire en arrière-plan (option "Toujours autoriser" avec précision exacte requis).
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
 
-Aucune donnée n'est collectée, que ce soit pour la localisation, ou pour les requêtes (arrêts autour de vous, itinéraires, horaires en temps réels) 
-par le développeur.
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
 
-Toutes les requêtes effectuées sont envoyées à l'API PRIM Île-de-France Mobilités et toutes les notifications sont reçues via un serveur grâce à un jeton unique 
-anonymisé de votre appareil lors de la première ouverture de l'app pour pouvoir recevoir les bonnes informations au bon appareil.
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--text-color);
+    }
 
-Cette application utilise l'API officiel PRIM d'Île-de-France Mobilités.
-Cette application n'est ni gérée, ni affiliée à quelconque personne ou entité en lien avec Île-de-France Mobilités.
+    .subtitle {
+      font-size: 15px;
+      color: var(--subtext-color);
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--subtext-color);
+      padding-bottom: 16px;
+      opacity: 0.4;
+    }
 
-Pour toute question, n'hésitez pas à me (le développeur) contacter via la partie support des réglages de l'application ou via la page de l'application dans
-l'App Store.
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: var(--text-color);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--subtext-color);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Politique de confidentialité</h1>
+    <div class="subtitle">Application iOS / iPadOS / macOS « Transports IDF »</div>
+
+    <p>L'application <strong>Transports IDF</strong> est gérée par le développeur indépendant Donovan Herbé. Elle est disponible sur l'App Store pour iPhone et iPad (iOS 17 et supérieur) ainsi que sur le Mac App Store (macOS 14 et supérieur).</p>
+
+    <h2>1. Utilisation de la géolocalisation</h2>
+    <p>Cette application utilise votre position géographique pour :</p>
+    <ul>
+      <li>Afficher les gares et arrêts de transport situés à proximité de vous (nécessite l'autorisation <em>« Autoriser lorsque l'app est active »</em> avec la précision exacte).</li>
+      <li>Assurer le suivi d'itinéraire en arrière-plan (nécessite l'autorisation <em>« Toujours autoriser »</em> avec la précision exacte).</li>
+    </ul>
+
+    <h2>2. Collecte et traitement des données</h2>
+    <p><strong>Aucune donnée personnelle n'est collectée</strong> par le développeur, que ce soit concernant votre localisation, vos recherches d'itinéraires ou vos consultations d'horaires en temps réel.</p>
+    <p>Toutes les requêtes effectuées sont directement transmises à l'API publique <strong>PRIM (Île-de-France Mobilités)</strong>. Pour l'envoi des notifications, un jeton unique et anonymisé de votre appareil est généré lors de la première ouverture afin d'acheminer les informations vers le bon destinataire.</p>
+
+    <h2>3. Affiliation et mentions légales</h2>
+    <p>Cette application utilise les API officielles fournies par Île-de-France Mobilités. Cependant, elle n'est ni gérée, ni affiliée, ni approuvée par Île-de-France Mobilités ou tout autre organisme public de transport.</p>
+
+    <h2>4. Contact et support</h2>
+    <p>Pour toute question ou demande d'assistance concernant l'application, vous pouvez me contacter via la section <strong>Support</strong> dans les réglages de l'application ou directement depuis la page de l'application sur l'App Store.</p>
+  </div>
+
+  <div class="footer">
+    © 2026 Donovan Herbé — Tous droits réservés.
+  </div>
+
+</body>
+</html>
