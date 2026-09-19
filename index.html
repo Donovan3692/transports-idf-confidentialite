@@ -11,6 +11,7 @@
       --card-bg: #FFFFFF;
       --text-color: #1C1C1E;
       --subtext-color: #6C6C70;
+      --border-color: rgba(60, 60, 67, 0.12);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
         --card-bg: #1C1C1E;
         --text-color: #FFFFFF;
         --subtext-color: #8E8E93;
+        --border-color: rgba(235, 235, 245, 0.15);
       }
     }
 
@@ -52,9 +54,8 @@
       font-size: 15px;
       color: var(--subtext-color);
       margin-bottom: 32px;
-      border-bottom: 1px solid var(--subtext-color);
+      border-bottom: 1px solid var(--border-color);
       padding-bottom: 16px;
-      opacity: 0.4;
     }
 
     h2 {
@@ -80,6 +81,17 @@
       margin-bottom: 8px;
     }
 
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      background-color: rgba(0, 122, 255, 0.1);
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
     .footer {
       margin-top: 40px;
       font-size: 14px;
@@ -92,26 +104,57 @@
 
   <div class="container">
     <h1>Politique de confidentialité</h1>
-    <div class="subtitle">Application iOS / iPadOS / macOS « Transports IDF »</div>
+    <div class="subtitle">Application iOS / iPadOS / watchOS / macOS « Transports IDF »</div>
 
-    <p>L'application <strong>Transports IDF</strong> est gérée par le développeur indépendant Donovan Herbé. Elle est disponible sur l'App Store pour iPhone et iPad (iOS 17 et supérieur) ainsi que sur le Mac App Store (macOS 14 et supérieur).</p>
+    <p>L'application <strong>Transports IDF</strong> est conçue et développée de manière indépendante par <strong>Donovan Herbé</strong>. Elle est disponible sur l'App Store pour :</p>
+    <ul>
+      <li><strong>iPhone et iPad</strong> (iOS 18 et supérieur)</li>
+      <li><strong>Apple Watch</strong> (watchOS 10 et supérieur)</li>
+      <li><strong>Mac</strong> (macOS 14 et supérieur)</li>
+    </ul>
+    <p>Le projet est guidé par une exigence de transparence totale, de sobriété numérique et de respect strict de la vie privée de ses utilisateurs.</p>
 
     <h2>1. Utilisation de la géolocalisation</h2>
-    <p>Cette application utilise votre position géographique pour :</p>
+    <p>Cette application peut solliciter l'accès à la localisation de votre appareil uniquement pour :</p>
     <ul>
-      <li>Afficher les gares et arrêts de transport situés à proximité de vous (nécessite l'autorisation <em>« Autoriser lorsque l'app est active »</em> avec la précision exacte).</li>
-      <li>Assurer le suivi d'itinéraire en arrière-plan (nécessite l'autorisation <em>« Toujours autoriser »</em> avec la précision exacte).</li>
+      <li><strong>Afficher les gares et arrêts situés à proximité de vous</strong> (nécessite l'autorisation <em>« Autoriser lorsque l'app est active »</em> avec la précision exacte).</li>
+      <li><strong>Assurer le suivi d'itinéraire en temps réel et les Activités en direct (Live Activities)</strong> (nécessite l'autorisation <em>« Toujours autoriser »</em> avec la précision exacte sur iPhone).</li>
+    </ul>
+    <p><strong>Traitement local :</strong> Vos données de position géographique sont traitées en temps réel et exclusivement sur votre appareil. Aucun historique de déplacement, géolocalisation ou trajet n'est stocké sur des serveurs distants ni transmis à des tiers.</p>
+
+    <h2>2. Démarche Open Source et transparence</h2>
+    <p>Dans un souci d'éthique et d'auditabilité publique, le code source de l'application est mis à disposition en <strong>Open Source</strong>. Cela garantit à chacun :</p>
+    <ul>
+      <li><strong>L'absence totale de traqueurs publicitaires</strong>, de SDK d'analyse comportementale ou de profilage commercial.</li>
+      <li>La possibilité de vérifier publiquement la conformité du code avec les engagements de cette politique.</li>
+      <li>Une expérience fluide, respectueuse et totalement exempte de publicité.</li>
     </ul>
 
-    <h2>2. Collecte et traitement des données</h2>
-    <p><strong>Aucune donnée personnelle n'est collectée</strong> par le développeur, que ce soit concernant votre localisation, vos recherches d'itinéraires ou vos consultations d'horaires en temps réel.</p>
-    <p>Toutes les requêtes effectuées sont directement transmises à l'API publique <strong>PRIM (Île-de-France Mobilités)</strong>. Pour l'envoi des notifications, un jeton unique et anonymisé de votre appareil est généré lors de la première ouverture afin d'acheminer les informations vers le bon destinataire.</p>
+    <h2>3. Achats intégrés (In-App Purchases)</h2>
+    <p>L'application propose un achat intégré optionnel sous la forme d'un achat unique non-consommable (le <em>Pack Thèmes</em>) permettant de personnaliser l'interface et les icônes d'accueil, tout en soutenant le travail du développeur indépendant.</p>
+    <ul>
+      <li><strong>Gestion sécurisée par Apple :</strong> Toutes les transactions financières sont traitées de façon chiffrée et exclusive par Apple via l'infrastructure <strong>StoreKit 2 / App Store</strong>.</li>
+      <li><strong>Aucune donnée bancaire collectée :</strong> Le développeur n'a jamais accès à votre numéro de carte de paiement, vos coordonnées bancaires, votre identifiant Apple ou vos adresses de facturation.</li>
+      <li><strong>Restauration à vie :</strong> L'achat est rattaché à votre compte Apple et peut être restauré gratuitement à tout moment sur l'ensemble de vos appareils compatibles.</li>
+    </ul>
 
-    <h2>3. Affiliation et mentions légales</h2>
-    <p>Cette application utilise les API officielles fournies par Île-de-France Mobilités. Cependant, elle n'est ni gérée, ni affiliée, ni approuvée par Île-de-France Mobilités ou tout autre organisme public de transport.</p>
+    <h2>4. Collecte et traitement des données réseau</h2>
+    <p><strong>Aucune donnée personnelle nominative n'est collectée</strong> par le développeur.</p>
+    <ul>
+      <li><strong>Horaires et itinéraires :</strong> Les requêtes transitent directement vers les données ouvertes publiques fournies par <strong>PRIM (Île-de-France Mobilités)</strong>.</li>
+      <li><strong>Synchronisation Apple Watch & iCloud :</strong> Vos favoris sont synchronisés en direct entre vos appareils via WatchConnectivity et sauvegardés dans votre espace privé Apple iCloud si la synchronisation est activée.</li>
+      <li><strong>Notifications de trafic :</strong> Un jeton technique d'appareil (<strong>Device Token APNs</strong>) anonymisé est généré par Apple lors de l'activation des alertes afin d'acheminer les notifications de perturbation de vos lignes favorites sans lien avec votre identité.</li>
+    </ul>
 
-    <h2>4. Contact et support</h2>
-    <p>Pour toute question ou demande d'assistance concernant l'application, vous pouvez me contacter via la section <strong>Support</strong> dans les réglages de l'application ou directement depuis la page de l'application sur l'App Store.</p>
+    <h2>5. Affiliation et mentions légales</h2>
+    <p>Cette application utilise les API et données publiques officielles fournies par <strong>Île-de-France Mobilités</strong>. Cependant, elle n'est ni éditée, ni affiliée, ni officiellement approuvée par Île-de-France Mobilités, la RATP, la SNCF ou tout autre organisme public de transport.</p>
+
+    <h2>6. Contact et support</h2>
+    <p>Pour toute question, retour ou demande d'assistance concernant l'application, vous pouvez contacter le développeur :</p>
+    <ul>
+      <li>Depuis la section <strong>Support & À propos</strong> dans les réglages de l'application.</li>
+      <li>Directement depuis la fiche de l'application sur l'App Store ou via le dépôt public du projet.</li>
+    </ul>
   </div>
 
   <div class="footer">
